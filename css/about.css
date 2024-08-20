@@ -1,0 +1,81 @@
+#content{
+    width: 1180px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+#about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #E4E1D6;
+    box-sizing: border-box;
+}
+#sobrenos{
+    width: 100%;
+    height: auto;
+    margin: 25px 50px ;
+    color: black;
+}
+#sobrenos h2{
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+#sobrenos p{
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+.img_about{
+    width: 100%;
+    height: 425px;
+    margin: 0;
+    padding: 0;
+}
+.img_about img{
+    width: 624px;
+    height: 425px;
+    margin: 0;
+    padding: 0;
+}
+#history{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.history-title{
+    width: 100%;
+    height: 450px;
+    background-color: #263058;
+    padding: 200px 0;
+}
+.history-title h2{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+.history-text{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 45px;
+    background-color: #E4E1D6;
+    box-sizing: border-box;
+}
+.history-text p{
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+.history-text h3{
+    font-size: 2em;
+    padding-bottom: 25px;
+}

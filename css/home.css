@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=DM+Serif+Display:ital@0;1&display=swap');
+@font-face {
+    font-family: 'Montecheri Serif', serif;
+    src: url('/fonts/Monterchi-Serif-Book-trial.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.fp__welcome {
+    display: none;
+}
+
+.carousel {
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-fotos {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Impede a interação com o caption */
+}
+
+.carousel-slide:hover .carousel-caption {
+    opacity: 1; /* Visível quando o mouse está sobre a imagem */
+    pointer-events: auto; /* Permite interação quando visível */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.carousel-button svg {
+    fill: #fff;/* Cor padrão dos botões */
+    transition: fill 0.3s ease-in-out;
+}
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel:hover .carousel-button {
+    opacity: 1; /* Visível quando o mouse está sobre o carrossel */
+    transform: scale(1.1); /* Pequena animação de aumento */
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/************************** Conteudo *******************************/
+/*******************************************************************/
+/*******************************************************************/
+
+.container{
+    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Ajuste conforme necessário */
+    background-color: #e4e1d6; /* Cor de fundo da página */
+    margin: 0 auto;
+}
+
+.fp__citacao {
+    position: relative;
+    width: 900px; /*Largura total da seção*/ 
+    height: 470px; /*Altura total da seção */
+    margin: 0 auto;
+}
+.fp__artigo-foto img {
+    width: 1068px;
+    height: 500px;
+    object-fit: cover; /*Ajusta a imagem para cobrir o espaço sem distorção*/ 
+    border-radius: 15px; /*Arredonda as bordas da imagem */
+    margin: 100px 0 100px 50px;
+}
+.box {
+    position: absolute;
+    top: 200px; /* Ajuste conforme necessário */
+    left: 30%; /* Ajuste conforme necessário */
+    width: 715px;
+    height: 430px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 20px;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+article {
+    font-family: 'Montecheri Serif', serif; /* Certifique-se de que a fonte esteja carregada */
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 50px; /* Ajuste conforme necessário /
+    margin: 20px; /* Espaço abaixo do título */
+}
+
+.box p{
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px; /* Ajuste conforme necessário */
+    margin: 40px 30px;
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+.box q {
+    font-size: 20px;
+    font-style: italic;
+    margin: 40px 30px;
+}
+
+/*Serviços*/
+.cartao-serv {
+    width: 1080px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.chamada{
+    font-size: 40px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+.caixa {
+    width: 490px;
+    height: 373px;
+    background-color: #fff;
+    border: 2px solid #A07D49;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.caixa-titulo{
+    width: 490px;
+    height: 85px;
+    border-radius: 30px 30px 0 0;
+    border-top: 2px solid #A07D49;
+    border-right: 2px solid #A07D49;
+    border-left: 2px solid #A07D49;
+    background-color: #263058;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin: -2px;
+    padding: 0;
+}
+.caixa-titulo h3{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    margin: 22px 31px;
+}
+.caixa-itens{
+    width: 396px;
+    height: 147px;
+    margin: 40px 60px;
+}
+.caixa-itens li{
+    font-size: 20px;
+}
+.caixa-botao{
+    width: 230px;
+    height: 50px;
+    background: linear-gradient(180deg, #263EA2 0%, #3DCDD6 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 0 125px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+}
+.caixa-botao a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/*Frase*/
+.fp__frase{
+    width: 1180px;
+    height: 475px;
+    margin: 10px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.fp__frase-box{
+    width: 562px;
+    height: 475px;
+    background-color: #e4e1d6;
+}
+.fp__frase-box h2{
+    text-align: left;
+    font-size: 40px; /* Ajuste conforme necessário */
+    margin: 30px; /* Espaço abaixo do título */
+}
+.fp__frase-box p{
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px; /* Ajuste conforme necessário */
+    margin: 40px 30px;
+    line-height: 1.5; /* Espaçamento entre linhas */
+    text-align: left;
+}
+.fp__img-left img{
+    width: 520px;
+    height: 485px;
+}

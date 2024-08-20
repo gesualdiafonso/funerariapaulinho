@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=DM+Serif+Display:ital@0;1&display=swap');
+@font-face {
+    font-family: 'Montecheri Serif', serif;
+    src: url('/fonts/Monterchi-Serif-Book-trial.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 1200px;
+    background-color: #EFECE2;
+}
+main, section {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+header{
+    width: auto;
+    height: 200px;
+    background-color: #263058;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logos{
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-flex;
+}
+.prever{
+    width: 125px;
+    height: 125px;
+    background-image: url("../img/logo.png");
+    margin: 30px 50px 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.letra {
+    background-image: url("../img/letra.png");
+    width: 250px;
+    height: 73px;
+    margin: 60px 30px 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*Inicio do Menú*/
+
+#nav_header {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: auto;
+}
+.menu_heder{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;   
+    text-decoration: none;
+    position: relative;
+}
+.menu_heder ul {
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu_heder li {
+    margin: 0 20px;
+    padding: 0;
+}
+.menu_heder a{
+    margin: 0;
+    padding: 0;
+}
+.menu_heder a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #a07D49;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+.menu_heder a:hover::after{
+    width: 100%;
+}
+.menu_heder a:hover{
+    color: #a07D49;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    min-width: 1200px;
+    height: 350px;
+    background-color: #263058;
+    display: grid;
+    padding: 0 150px;
+    margin: 0;
+}

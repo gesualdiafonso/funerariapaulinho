@@ -1,0 +1,27 @@
+.title{
+    font-size: 3em;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0;
+}
+#planos{
+    width: 1180px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+#container-srv{
+    width: 1180px;
+    height: 977px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.assistencia-familiar{
+    width: 380px;
+    height: 491px;
+}
+.image-familiar{
+    
+}
